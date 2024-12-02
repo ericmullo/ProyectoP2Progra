@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoP2.FlexLayoutPage"
+             Title="Flex Layout">
+    <VerticalStackLayout BackgroundColor="#1E88E5" Padding="20" Spacing="20">
+        <Label 
+            Text="Bienvenido a FlexLayout" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="30"
+            TextColor="White"
+            FontAttributes="Bold" />
+
+        <Frame BackgroundColor="#512DA8" CornerRadius="10" Padding="20" HasShadow="True">
+            <VerticalStackLayout Spacing="15">
+                <HorizontalStackLayout Spacing="10" Padding="10">
+                    <Image Source="image1.jpeg" WidthRequest="100" HeightRequest="100" VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Josue Valencia" FontSize="24" TextColor="White" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10" Padding="10">
+                    <Image Source="image3.jpg" WidthRequest="100" HeightRequest="100" VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Eric Mullo" FontSize="24" TextColor="White" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Label 
+            Text="TallerJVEM © 2024 | Aprende, Crea y Comparte" 
+            VerticalOptions="End" 
+            HorizontalOptions="Center"
+            FontSize="14"
+            TextColor="White" />
+    </VerticalStackLayout>
+</ContentPage>

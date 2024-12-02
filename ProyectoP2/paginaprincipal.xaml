@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoP2.paginaprincipal"
+             Title="Sistema de Gestión de Taller Mecánico">
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#F3F3F3" Padding="20">
+            <!-- Encabezado -->
+            <Label 
+                Text="Bienvenidos al Sistema de Gestión de Taller Mecánico"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Margin="0,20,0,10" />
+
+            <Label 
+                Text="Integrantes: Josue Valencia, Eric Mullo, Darwin López, Dilan Herrera"
+                FontSize="14"
+                HorizontalOptions="Center"
+                Margin="0,0,0,30" />
+
+            <!-- Sección de Servicio -->
+            <Frame BackgroundColor="Yellow" CornerRadius="10" Padding="20">
+                <VerticalStackLayout>
+                    <Label 
+                        Text="Servicio de Calidad Mecánico"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center" />
+
+                    <Label 
+                        Text="Confía en nosotros para el mantenimiento y reparación en mecánica."
+                        FontSize="14"
+                        HorizontalOptions="Center"
+                        Margin="0,10" />
+
+                    <Button
+                        Text="Encuéntranos ahora"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        HorizontalOptions="Center"
+                        WidthRequest="150" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Detalles de contacto, descuento y trabajos -->
+            <HorizontalStackLayout Spacing="10" Margin="0,20,0,0">
+                <!-- Detalles de Contacto -->
+                <Frame BackgroundColor="Black" CornerRadius="10" Padding="10" WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label 
+                            Text="Detalles de Contacto"
+                            FontSize="16"
+                            TextColor="Yellow"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center" />
+
+                        <Label 
+                            Text="Tel: 0998515763"
+                            FontSize="14"
+                            TextColor="Yellow"
+                            HorizontalOptions="Center" />
+
+                        <Label 
+                            Text="Email: infomecanica@gmail.com"
+                            FontSize="14"
+                            TextColor="Yellow"
+                            HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Descuento -->
+                <Frame BackgroundColor="Black" CornerRadius="10" Padding="10" WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label 
+                            Text="Descuento del 30%"
+                            FontSize="16"
+                            TextColor="Yellow"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center" />
+
+                        <Label 
+                            Text="En tu primera visita, obtén un descuento especial."
+                            FontSize="14"
+                            TextColor="Yellow"
+                            HorizontalOptions="Center"
+                            Margin="0,10" />
+
+                        <Button
+                            Text="Obtener Descuento"
+                            BackgroundColor="Yellow"
+                            TextColor="Black"
+                            HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Tipos de Trabajos -->
+                <Frame BackgroundColor="Black" CornerRadius="10" Padding="10" WidthRequest="100">
+                    <VerticalStackLayout>
+                        <Label 
+                            Text="Tipos de Trabajos"
+                            FontSize="16"
+                            TextColor="Yellow"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center" />
+
+                        <Label 
+                            Text="Atendemos todo tipo de trabajo industrial."
+                            FontSize="14"
+                            TextColor="Yellow"
+                            HorizontalOptions="Center"
+                            Margin="0,10" />
+                    </VerticalStackLayout>
+                </Frame>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
